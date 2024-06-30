@@ -12,12 +12,30 @@
         var array1 = ['sss',"sfsf","sfj","34","true"] -->
 
         <script>
-            // let name = ["one", "two", "three", "four","five","six","seven","eight","nine",10]
+            let name = ["one", "two", "three", "four","five","six","seven","eight","nine",10]
             
             // let name2 = name;
             // document.write(name2) 
 
-            
+            // array with for loop
+            // for(i = 0; i<=name.length;i++){
+            //     console.log(name[i]);
+            //     document.write("index :- ",i,"=>",name[i],"<br>")
+            // }  
+            // console.log(name);
+
+            // using for loop with array only array index and a.value
+
+            for(let contain in name){
+           document.write(contain);
+             
+           document.write(name[contain]);
+          
+            }
+
+
+
+
              </script>
 </body>
 </html>
