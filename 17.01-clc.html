@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Events : - onclick, oneblure,keypress,mouseEnter -->
+    
+    <!-- <input type="text" id="n1" placeholder="p1 value">
+    <input type="text" id="n2" placeholder="p2 value">
+    <input type="text" id="n3" placeholder="enter the value">
+    <button onclick="add1()" >click</button>
+    <h1 id="h1"></h1>
+
+    <script>
+        function add1(){
+            let num1 = document.getElementById("n1").value
+
+            let num2 = document.getElementById("n2").value
+            let num3 = document.getElementById("n3").value
+
+            let sum = parseInt(num1) + parseFloat(num2) + parseInt(num3)
+            console.log(`your sum  is ${sum}`);
+
+
+            
+
+            document.getElementById("h1").innerHTML = sum;
+          
+
+            
+        }
+        add1()
+
+
+        
+       
+    </script> -->
+   <table>
+<input type="text" id="n1" placeholder="enter your first input">
+<input type="text" id="n2" name="" placeholder="enter your second value">
+<button onclick="demo()">CLICK</button>
+<h1 id="main-value"></h1>
+   </table>
+  
+
+    <script>
+        function demo() {
+            let num1 = document.getElementById("n1").value
+
+            let num2 = document.getElementById("n2").value
+
+         let sum = parseInt(num1) + parseFloat(num2);
+
+         document.getElementById("main-value").innerHTML = sum;
+        }
+        demo()
+    </script>
+
+</body>
+</html>
