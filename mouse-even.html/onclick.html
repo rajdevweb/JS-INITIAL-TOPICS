@@ -6,15 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="para"></p>
-    <button onclick="myFunc()">Click</button>
+       <p id="para"></p>
+        <button onclick="f()" id="mybotton">Click</button>
 
-    <script>
-        function myFunc(params) {
-            let name = "raj vishwakarma ♥️"
-            document.getElementById("para").innerHTML= name;
+        <script>
+            // function myFunc(params) {
+            //     let name = "raj vishwakarma ♥️"
+            //     document.getElementById("para").innerHTML= name;
+            // } 
 
-        }
+            //👉 second example
+            // let button = document.getElementById("mybotton")
+            // button.onclick = function myFunc() {
+            //     document.getElementById("para").innerHTML = "o krishna"
+            // }
+            // myFunc()
+
+            // 👉third example
+            let a = "raj";
+            function f(){
+               document.getElementById("para").innerHTML = "my lord"
+            }
+         
        
 
     </script>
