@@ -7,15 +7,24 @@
 </head>
 <body>
     <ul>
-        <li>apple</li>
-        <li>ball</li>
-        <li>cat</li>
-        <li>dog</li>
+        <li class="class-item">apple</li>
+        <li class="class-item">ball</li>
+        <li class="class-item">cat</li>
+        <li class="class-item">dog</li>
     </ul>
 
     <script>
-        let ulList = document.querySelectorAll("ul")
-        console.log(ulList[0]);
+        let class_name = document.getElementsByClassName("class-item");
+        
+        console.log(class_name);
+
+       let second_class =  Array.from(class_name)
+        console.log(second_class);
+        
+        
+    
+
+       
         
     </script>
 </body>
