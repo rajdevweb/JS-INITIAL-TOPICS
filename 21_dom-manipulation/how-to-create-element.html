@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+
+    <script>
+        let weeklist = document.querySelector(".container")
+        // console.log(weeklist);
+        // console.log(weeklist.children[3]);
+        
+        // console.log(weeklist.children);
+
+        for(let i = 0 ; i < weeklist.children.length; i++){
+         console.log(weeklist.children[i].innerHTML);
+         
+        }
+        // weeklist.children[0].style.color = "red"
+        // weeklist.children[3].style.color = "gray"
+
+        // console.log(weeklist.firstElementChild);
+        // document.getElementById("p").innerHTML = weeklist.firstElementChild;
+        // document.getElementById("p").innerHTML = weeklist.lastElementChild;
+
+        let dayTwo = document.querySelector(".day");
+        // console.log(dayTwo);
+
+        // how to access parent element
+        console.log(dayTwo.parentElement);
+
+        //access nextSibling
+        console.log(dayTwo.nextElementSibling);
+
+        
+
+        
+        
+            
+                
+    </script>
+</body>
+</html>
