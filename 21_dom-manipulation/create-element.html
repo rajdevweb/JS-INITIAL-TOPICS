@@ -7,20 +7,64 @@
  
 </head>
 <body>
-    <p class="para"></p>
+    <!-- <p class="para"></p> -->
+
+    <ul class="language">
+        <li>javascript</li>
+        <li>python</li>
+        <li>java</li>
+        <li>html</li>
+    </ul>
     <script>
         //how to create element 
-        let div = document.createElement("div")
-        console.log(div);
-        div.className = "main-container";
-        div.id = Math.round(math.random() * 10 + 1)
-        div.setAttribute("title" , "div's title");
-        div.style.backgroundColor = "purple";
-        div.style.padding = "12px 12px"
-        div.innerHTML= "raj vishwakarma"
-         
-        let printf = document.getElementById("para").innerHTML = div;
+        //example :-1🚀🚀🚀🚀🚀🚀🚀🚀🚀
+        // let div = document.createElement("div")
+        // console.log(div);
+        // div.className = "main-container";
+        // div.id = Math.round(Math.random() * 10 + 1)
+        // div.setAttribute("title" , "div's title");
+        // div.style.backgroundColor = "purple";
+        // div.style.padding = "12px 12px"
+        // div.style.color = "white"
+        // // div.innerHTML= "raj vishwakarma"
+        // let addtext = document.createTextNode("raj vishwakarma");
+        // div.appendChild(addtext);
 
+        // document.body.appendChild(div)
+ 
+        //  example :-2🚀🚀🚀🚀🚀🚀🚀🚀🚀
+        //   let para = document.createElement("p");
+        //   para.textContent = "how was your day "
+        //   para.setAttribute = "class", "parag";
+        //   para.style.color = "red"
+        //   para.style.fontFamily = "poppins"
+        //   document.body.appendChild(para);
+
+
+        //optimizelangauge
+        //example :- 3
+        // how to  add value using dom manipulation to optimize method
+        
+        function usingOpti(langAdd) {
+            let li = document.createElement("li");
+            li.appendChild(document.createTextNode(langAdd));
+            document.querySelector(".language").appendChild(li)
+            li.style.color = "red"
+        } 
+        usingOpti("css")
+ 
+        // Edit 
+        let secondLang = document.querySelector("li:nth-child(2)")
+        console.log(secondLang);
+        // secondLang.innerHTML = "github";
+        let newLang = document.createElement("li");
+        newLang.textContent = "mojo";
+        secondLang.replaceChild(newLang);
+
+         
+
+        
+          
 
 
         
