@@ -11,9 +11,7 @@
 
     <ul class="language">
         <li>javascript</li>
-        <li>python</li>
-        <li>java</li>
-        <li>html</li>
+   
     </ul>
     <script>
         //how to create element 
@@ -45,14 +43,14 @@
         //example :- 3
         // how to  add value using dom manipulation to optimize method
         
-        function usingOpti(langAdd) {
-            let li = document.createElement("li");
-            li.appendChild(document.createTextNode(langAdd));
-            document.querySelector(".language").appendChild(li)
-            li.style.color = "red"
-        } 
-        usingOpti("css")
-        usingOpti("python")
+        // function usingOpti(langAdd) {
+        //     let li = document.createElement("li");
+        //     li.appendChild(document.createTextNode(langAdd));
+        //     document.querySelector(".language").appendChild(li)
+        //     li.style.color = "red"
+        // } 
+        // usingOpti("css")
+        // usingOpti("python")
 
         function addoptilang(langAdd){
         let li =document.createElement("li")
@@ -60,11 +58,17 @@
         document.querySelector(".language").appendChild(li)
        } 
        addoptilang("apple")
+        addoptilang("grasp")
  
         // Edit 
         let seconsLang = document.querySelector("li:nth-child(2)")
         let newli = document.createElement("li")
-        newli.textContent = "applee"
+        newli.innerHTML = "so interesting"
+        seconsLang.replaceWith(newli)
+
+        // remov
+        let removeTaf = document.querySelector("li:last-child");
+        // removeTaf.remove()
          
 
         
