@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- getElementByid -->
+ <form action="" name="form1">
+    <ul>
+        <li>
+            <label for="">Enter No</label>
+            <input type="text" id="number" name="number">
+        </li>
+        <li>
+            <input type="button" onclick="getcube()" name="click" value="click" id="">
+        </li>
+    </ul>
+ </form>
+ <script type="text/javascript">
+    function getcube(){
+        let num = document.getElementById("number").value;
+        alert(num * num * num)
+    }
+ </script>
+</body>
+</html>
