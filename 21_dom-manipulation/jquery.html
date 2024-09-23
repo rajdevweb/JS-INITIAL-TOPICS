@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- jquery cdn link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+        img{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="" name="form1">
+      
+    </form>
+
+    <ul>
+        <li><img src="../image/animal6.png" alt=""></li>
+        <li><button id="hide">Hide</button></li>
+        <li><button id="show">Show</button></li>
+    </ul>
+ 
+
+
+
+   <script>
+    $(document).ready(function(){
+        $("#hide").click(function(){
+            $("img").hide();
+        })
+        $("#show").click(function() {
+            $("img").show();
+        })
+    })
+   </script>
+</body>
+</html>
