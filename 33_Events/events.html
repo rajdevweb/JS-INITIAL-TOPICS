@@ -5,7 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+ ul{
+    list-style-type:disc ;
+  
+ }
+</style>
 <body>
+    <ul id="unorder-list">
+        <li><img width="50%" id="fish" src="../image/animal1.png" alt="photoshop"></li>
+
+        <li><img width="50%" id="horse" src="../image/animal10.png" alt="photoshop"></li>
+        
+        <li><img width="50%" id="tortois" src="../image/animal11.png" alt="photoshop"></li>
+
+        <li><img width="50%" id="tortoil" src="../image/animal13.png" alt="photoshop"></li>
+
+        <li><img width="50%" id="horse" src="../image/animal12.png" alt="photoshop"></li>
+
+        <li><img width="50%" id="horse" src="../image/animal5.png" alt="photoshop"></li>
+    </ul>
     
+    <script>
+        // but this is not right way 
+        // document.getElementById("horse").onclick = function() {
+        //  alert("horse running")   
+        // }
+
+        // right way
+        // document.getElementById("horse").addEventListener("click", function (e) {
+        //     alert("horse per hour")
+        // })
+        
+        // how to access all events in debug
+        // document.getElementById("horse").addEventListener("click", function(e){
+        //     console.log(e);
+            
+        // },false)
+
+      
+        // events bubbling down to top  
+        // document.getElementById("fish").addEventListener("click", function (a) {
+        //     console.log("this is img section");
+
+        // }, false)
+                
+        //events capturing top to down
+        // document.getElementById("unorder-list").addEventListener("click", function (a) {
+        //     console.log("this is unorderlist");
+            
+        // },true)
+
+        // example of bubbling
+
+        // document.getElementById("tortois").addEventListener("click", function(e){
+        // console.log(e);
+        //  e.preventDefault();
+        //  e.stopPropagation();
+        //  console.log("tortoise clicker");
+         
+        // },false)
+
+        document.querySelector("#unorder-list").addEventListener("click",function (e) {
+            console.log(e.target.parentNode);
+            if (e.target.tagName === "li") {
+                 let removeIT = e.target.parentNode
+                removeIT.remove()
+            }
+           
+        })
+
+
+   
+    </script>
 </body>
 </html>
