@@ -8,11 +8,33 @@
 </head>
 <body>
    <p id="async"></p>
+   <button id="stop">Click</button>
 </body>
 <script>
-  setTimeout(function () {
-    document.getElementById("async").innerHTML = "raj vishwakarma"
+  // setTimeout(function () {
+  //   document.getElementById("async").innerHTML = "raj vishwakarma"
     
-  }, 3000) //miliseconds
-</script>
+  // }, 3000) //miliseconds
+
+  // method :- 2
+  // let helloRaj = function () {
+  //   document.getElementById("async").innerText = "hello raj what are doing it"
+  // }
+
+  // setTimeout(helloRaj , 2000)
+
+  // clearInterval ek function hai jo ki aage hone vale function ya code ko execute sai rok deta hai usi ko ek event ka use karke cleaInterval ka code likha gaya hai.
+
+  let hello = function () {
+    document.getElementById("async").innerHTML = "hello how are you man"
+  }
+
+  let changeValue = setTimeout(hello, 2000)
+
+  document.querySelector("#stop").addEventListener("click", function(){
+    clearTimeout(changeValue)
+    document.getElementById("async").innerHTML = "stop you";
+  })
+  
+  </script>
 </html>
