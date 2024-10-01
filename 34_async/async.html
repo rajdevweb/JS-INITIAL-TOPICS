@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
 <body>
-    
+   <p id="async"></p>
 </body>
+<script>
+  setTimeout(function () {
+    document.getElementById("async").innerHTML = "raj vishwakarma"
+    
+  }, 3000) //miliseconds
+</script>
 </html>
