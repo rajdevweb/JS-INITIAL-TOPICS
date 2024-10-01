@@ -8,7 +8,8 @@
 </head>
 <body>
    <p id="async"></p>
-   <button id="stop">Click</button>
+   <button id="stop">stop</button>
+   <button id="start">start</button>
 </body>
 <script>
   // setTimeout(function () {
@@ -25,16 +26,25 @@
 
   // clearInterval ek function hai jo ki aage hone vale function ya code ko execute sai rok deta hai usi ko ek event ka use karke cleaInterval ka code likha gaya hai.
 
-  let hello = function () {
-    document.getElementById("async").innerHTML = "hello how are you man"
-  }
+  // let hello = function () {
+  //   document.getElementById("async").innerHTML = "hello how are you man"
+  // }
 
-  let changeValue = setTimeout(hello, 2000)
+  // let changeValue = setTimout(hello, 2000)
 
-  document.querySelector("#stop").addEventListener("click", function(){
-    clearTimeout(changeValue)
-    document.getElementById("async").innerHTML = "stop you";
-  })
+  // document.querySelector("#stop").addEventListener("click", function(){
+  //   clearTimeout(changeValue)
+  //   document.getElementById("async").innerHTML = "stop you";
+  // })
+
+  
+
+ // setInterval this function is look like loop but does not also loop. as work like loop where setTimeout is one print here setInterval function are print by print value again a again
+
+  // setInterval(function () {
+  //   console.log("raj",Date.now());
+    
+  // }, 2000)
   
   </script>
 </html>
