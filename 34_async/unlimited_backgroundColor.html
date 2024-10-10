@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para"></p>
+    <button id="start">START</button>
+    <button id="stop">END</button>
+</body>
+<script>
+    let randomeColor = function () {
+        let hex = "0123456789ABCDEF";
+        let color  = "#"
+        for (let i = 0; i < 6 ; i++) {
+            color +=  hex[Math.floor(Math.random() * 16)]
+            
+        }
+        return color
+    };
+
+    // document.querySelector("#start").addEventListener("click", function() {
+    //     setInterval(randomeColor , 1000 , "start")
+    //     document.getElementById("para").innerHTML = "you color is start"
+    // }) 
+
+    // let clearInerval = setInterval(randomeColor , 1000 ,"nice       " )
+    // 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
+    // let nullvalue;
+    // let startColor = () =>{
+    //   if (!nullvalue) {
+    //     nullvalue = setInterval(changeColor, 500);
+    //   }
+      
+    //   function changeColor(){
+    //       document.body.style.backgroundColor = randomeColor();
+    //   }
+    // };
+    //  let stopColor = () => {
+    //     clearInterval(nullvalue)
+    //     nullvalue = null
+    //     };
+    // document.querySelector("#start").addEventListener("click", startColor)
+    // document.querySelector("#stop").addEventListener("click", stopColor)
+
+</script>
+</html>
