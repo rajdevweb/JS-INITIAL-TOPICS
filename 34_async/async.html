@@ -24,7 +24,7 @@
 
   // setTimeout(helloRaj , 2000)
 
-  // clearInterval ek function hai jo ki aage hone vale function ya code ko execute sai rok deta hai usi ko ek event ka use karke cleaInterval ka code likha gaya hai.
+  // clearInterval ek function hai jo ki aage hone vale function ya code ko execute hone sai rok deta hai usi ko ek event ka use karke cleaInterval ka code likha gaya hai.
 
   // let hello = function () {
   //   document.getElementById("async").innerHTML = "hello how are you man"
@@ -47,6 +47,21 @@
   // }, 2000)
 
   // method 2 of setInterval
+  let damo = function(str){
+    console.log(str , Date.now());
+    
+  }
+  document.querySelector("#start").addEventListener("click" , function() {
+    setInterval(damo, 1000, "welcome")
+    document.getElementById("async").innerHTML = "you have code again start"
+
+  })
+  let clearIntervalId = setInterval(damo, 1000, "welcome")
+
+  document.querySelector("#stop").addEventListener("click", function(){
+    clearInterval(clearIntervalId)
+    document.getElementById("async").innerHTML = "you loop is stop"
+  })
   
   </script>
 </html>
