@@ -1,0 +1,11 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "Live Preview",
+			"workspacePath": "/Users/rajvishwakarma/RAJ-WITH-CODE /JS-INITIAL-TOPICS",
+			"problemMatcher": [],
+			"label": "Live Preview: Run Server"
+		}
+	]
+}
