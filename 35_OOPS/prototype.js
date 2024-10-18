@@ -10,7 +10,9 @@
 
 
 //declare with direct object
+
 //program 2
+
 // let myCourse = ["html","css", "javascript","bootstrap","tailwaind","mysql","gitbase","github"];
 
 // Object.prototype.raj = function(){
@@ -25,4 +27,28 @@
 // myCourse.krishna();
 
 
+//program 3 inheritance
+const User = {
+    name: "chai",
+    email: "chai@google.com"
+}
 
+const Teacher = {
+    makeVideo: true
+}
+
+const TeachingSupport = {
+    isAvailable: false
+}
+
+const TASupport = {
+    makeAssignment: 'JS assignment',
+    fullTime: true,
+    __proto__: TeachingSupport
+}
+
+let abc = Teacher.__proto__ = User
+console.log(abc);
+
+//program 4 write a modern method inheritance
+obje
