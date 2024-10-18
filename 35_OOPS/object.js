@@ -24,7 +24,7 @@ createUser.prototype.printMe = function(){
     
 }
 
-let a = createUser("rahul",10000)
+let a = new createUser("rahul",10000)
 // let b = createUser("rahul","$100")
 console.log(a);
 
