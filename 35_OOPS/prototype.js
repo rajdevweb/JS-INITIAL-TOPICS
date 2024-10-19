@@ -28,27 +28,36 @@
 
 
 //program 3 inheritance
-const User = {
-    name: "chai",
-    email: "chai@google.com"
+const customer = {
+    name: "raj",
+    sex:"male",
+    mobile:"9313679935"
 }
-
-const Teacher = {
-    makeVideo: true
+const hotel = {
+    room: true
 }
-
-const TeachingSupport = {
-    isAvailable: false
+const staffSupport = {
+    isAvailable:true
 }
+ const foodService = {
+    meals: "punjabi dees",
+    bevarage:"coca cola",
+    water:"mineral water"
+ }
+// console.log(hotel.__proto__ = customer);
 
-const TASupport = {
-    makeAssignment: 'JS assignment',
-    fullTime: true,
-    __proto__: TeachingSupport
+//write modern method inheritance
+// let objects = Object.setPrototypeOf(hotel,customer)
+
+// console.log(objects,customer);
+
+//program 4
+let anotherUser = "govind madhaveti    ";
+
+String.prototype.trueLength = function(){
+    console.log(`${this}`);
+    console.log(`true lenght is: ${this.trim().length}`)
 }
-
-let abc = Teacher.__proto__ = User
-console.log(abc);
-
-//program 4 write a modern method inheritance
-obje
+anotherUser.trueLength()
+"hari       ".trueLength()
+"swarna".trueLength()
