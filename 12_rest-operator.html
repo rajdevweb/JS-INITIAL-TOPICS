@@ -28,13 +28,24 @@
 //    student()
 
     // array with function
-    let a = [ 200, 500,400,800];
+//     let a = [ 200, 500,400,800];
 
-    function myArray(value1){
-       return value1[1]
-    } 
-   document.write()
-   console.log(myArray(a));
+//     function myArray(value1){
+//        return value1[1]
+//     } 
+//    document.write()
+//    console.log(myArray(a));
+
+     function addGrade(...grades){
+        let total = 0;
+        for(let grade of grades){
+            total += grade;
+        }
+        return total;
+     }
+     console.log(addGrade(10, 101, 10,10));
+     console.log(addGrade(10, 101, 10,10));
+      
     </script>
 </body>
 </html>
